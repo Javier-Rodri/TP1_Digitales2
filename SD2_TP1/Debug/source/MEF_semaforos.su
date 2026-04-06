@@ -1,0 +1,3 @@
+../source/MEF_semaforos.c:30:13:MEF_semaforos_init	8	static
+../source/MEF_semaforos.c:38:13:MEF_semaforos	8	static
+../source/MEF_semaforos.c:107:13:MEF_semaforos_task1ms	8	static

@@ -1,0 +1,3 @@
+../source/MEF_acumulado.c:30:13:MEF_acumulado_reset	8	static
+../source/MEF_acumulado.c:37:13:MEF_acumulado	16	static
+../source/MEF_acumulado.c:124:13:MEF_acumulado_task1ms	8	static
