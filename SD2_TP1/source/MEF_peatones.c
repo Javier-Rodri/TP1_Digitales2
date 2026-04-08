@@ -1,10 +1,4 @@
-/**
- * @file MEF_peatones.c
- * @author Federico Scheytt
- * @version 1.0
- * @date 04-2024
- *
- */
+
 
 /*===============================[ Inclusions ]===============================*/
 #include "MEF_peatones.h"

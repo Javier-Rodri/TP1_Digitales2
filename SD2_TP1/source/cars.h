@@ -1,8 +1,4 @@
-/*
- * cars.h
- *
- *      Author: Fede
- */
+
 
 #ifndef CARS_H_
 #define CARS_H_

@@ -1,8 +1,3 @@
-/*
- * MEF_acumulado.h
- *
- *      Author: Fede
- */
 
 #ifndef MEF_ACUMULADO_H_
 #define MEF_ACUMULADO_H_

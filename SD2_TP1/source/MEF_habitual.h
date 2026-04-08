@@ -1,8 +1,4 @@
-/*
- * MEF_habitual.h
- *
- *      Author: Fede
- */
+
 
 #ifndef MEF_HABITUAL_H_
 #define MEF_HABITUAL_H_

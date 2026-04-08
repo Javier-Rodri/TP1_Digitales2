@@ -1,8 +1,4 @@
-/*
- * MEF_peatones.h
- *
- *      Author: Fede
- */
+
 
 #ifndef MEF_PEATONES_H_
 #define MEF_PEATONES_H_
