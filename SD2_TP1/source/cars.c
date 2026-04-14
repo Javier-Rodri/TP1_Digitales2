@@ -1,8 +1,4 @@
-/*
- * cars.c
- *
- *      Author: Fede
- */
+
 
 #include "cars.h"
 

@@ -1,10 +1,4 @@
-/**
- * @file main.c
- * @author Federico Scheytt
- * @version 1.0
- * @date 04-2024
- *
- */
+
 
 /*===============================[ Inclusions ]===============================*/
 #include "SD2_board.h"

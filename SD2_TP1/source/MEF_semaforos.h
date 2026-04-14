@@ -1,8 +1,4 @@
-/*
- * MEF_semaforos.h
- *
- *      Author: Fede
- */
+
 
 #ifdef __cplusplus
 extern "C" {

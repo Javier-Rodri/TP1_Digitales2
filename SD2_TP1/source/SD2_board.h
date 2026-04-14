@@ -1,10 +1,3 @@
-/**
- * @file SD2_board.h
- * @author Federico Scheytt
- * @version 1.0
- * @date 04-2024
- *
- */
 
 #ifndef SD2_BOARD_H_
 #define SD2_BOARD_H_
