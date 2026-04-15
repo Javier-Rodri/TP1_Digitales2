@@ -4,7 +4,6 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../source/ADC.c \
 ../source/MEF_Luminaria.c \
 ../source/MEF_acumulado.c \
 ../source/MEF_habitual.c \
@@ -15,10 +14,10 @@ C_SRCS += \
 ../source/key.c \
 ../source/main.c \
 ../source/mtb.c \
-../source/semihost_hardfault.c 
+../source/semihost_hardfault.c \
+../source/sensor_luz.c 
 
 C_DEPS += \
-./source/ADC.d \
 ./source/MEF_Luminaria.d \
 ./source/MEF_acumulado.d \
 ./source/MEF_habitual.d \
@@ -29,10 +28,10 @@ C_DEPS += \
 ./source/key.d \
 ./source/main.d \
 ./source/mtb.d \
-./source/semihost_hardfault.d 
+./source/semihost_hardfault.d \
+./source/sensor_luz.d 
 
 OBJS += \
-./source/ADC.o \
 ./source/MEF_Luminaria.o \
 ./source/MEF_acumulado.o \
 ./source/MEF_habitual.o \
@@ -43,7 +42,8 @@ OBJS += \
 ./source/key.o \
 ./source/main.o \
 ./source/mtb.o \
-./source/semihost_hardfault.o 
+./source/semihost_hardfault.o \
+./source/sensor_luz.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -58,7 +58,7 @@ source/%.o: ../source/%.c source/subdir.mk
 clean: clean-source
 
 clean-source:
-	-$(RM) ./source/ADC.d ./source/ADC.o ./source/MEF_Luminaria.d ./source/MEF_Luminaria.o ./source/MEF_acumulado.d ./source/MEF_acumulado.o ./source/MEF_habitual.d ./source/MEF_habitual.o ./source/MEF_peatones.d ./source/MEF_peatones.o ./source/MEF_semaforos.d ./source/MEF_semaforos.o ./source/SD2_board.d ./source/SD2_board.o ./source/cars.d ./source/cars.o ./source/key.d ./source/key.o ./source/main.d ./source/main.o ./source/mtb.d ./source/mtb.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o
+	-$(RM) ./source/MEF_Luminaria.d ./source/MEF_Luminaria.o ./source/MEF_acumulado.d ./source/MEF_acumulado.o ./source/MEF_habitual.d ./source/MEF_habitual.o ./source/MEF_peatones.d ./source/MEF_peatones.o ./source/MEF_semaforos.d ./source/MEF_semaforos.o ./source/SD2_board.d ./source/SD2_board.o ./source/cars.d ./source/cars.o ./source/key.d ./source/key.o ./source/main.d ./source/main.o ./source/mtb.d ./source/mtb.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o ./source/sensor_luz.d ./source/sensor_luz.o
 
 .PHONY: clean-source
 

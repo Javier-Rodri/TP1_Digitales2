@@ -14,9 +14,9 @@
 extern "C" {
 #endif
 
-extern void MEF_Luminaria_init(void);
-extern bool MEF_Luminaria(void);
-extern void MEF_Luminaria_task1ms(void);
+extern void MEF_Luminaria_Init(void);
+extern void MEF_Luminaria_Task(void);
+extern void MEF_Luminaria_tick(void);
 
 #ifdef __cplusplus
 }
