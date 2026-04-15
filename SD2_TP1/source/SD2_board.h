@@ -18,7 +18,8 @@ typedef enum {
 	BOARD_LED_ID_VERDE_RUTA,
 	BOARD_LED_ID_ROJO_SEC,
 	BOARD_LED_ID_VERDE_SEC,
-    BOARD_LED_ID_TOTAL
+    BOARD_LED_ID_TOTAL,
+	BOARD_LED_ID_Luminaria
 } board_ledId_enum;
 
 typedef enum {

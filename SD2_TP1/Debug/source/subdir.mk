@@ -4,6 +4,8 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../source/ADC.c \
+../source/MEF_Luminaria.c \
 ../source/MEF_acumulado.c \
 ../source/MEF_habitual.c \
 ../source/MEF_peatones.c \
@@ -16,6 +18,8 @@ C_SRCS += \
 ../source/semihost_hardfault.c 
 
 C_DEPS += \
+./source/ADC.d \
+./source/MEF_Luminaria.d \
 ./source/MEF_acumulado.d \
 ./source/MEF_habitual.d \
 ./source/MEF_peatones.d \
@@ -28,6 +32,8 @@ C_DEPS += \
 ./source/semihost_hardfault.d 
 
 OBJS += \
+./source/ADC.o \
+./source/MEF_Luminaria.o \
 ./source/MEF_acumulado.o \
 ./source/MEF_habitual.o \
 ./source/MEF_peatones.o \
@@ -44,7 +50,7 @@ OBJS += \
 source/%.o: ../source/%.c source/subdir.mk
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C Compiler'
-	arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL46Z256VLH4_cm0plus -DCPU_MKL46Z256VLH4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -DSDK_DEBUGCONSOLE=1 -I"C:\nxp\default_workspace\SD2_TP1_v2.0\board" -I"C:\nxp\default_workspace\SD2_TP1_v2.0\source" -I"C:\nxp\default_workspace\SD2_TP1_v2.0" -I"C:\nxp\default_workspace\SD2_TP1_v2.0\drivers" -I"C:\nxp\default_workspace\SD2_TP1_v2.0\CMSIS" -I"C:\nxp\default_workspace\SD2_TP1_v2.0\utilities" -I"C:\nxp\default_workspace\SD2_TP1_v2.0\startup" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="$(<D)/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL46Z256VLH4_cm0plus -DCPU_MKL46Z256VLH4 -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -DSDK_DEBUGCONSOLE=1 -I"D:\Documentos\Digitales 2\TP1\SD2_TP1\board" -I"D:\Documentos\Digitales 2\TP1\SD2_TP1\source" -I"D:\Documentos\Digitales 2\TP1\SD2_TP1" -I"D:\Documentos\Digitales 2\TP1\SD2_TP1\drivers" -I"D:\Documentos\Digitales 2\TP1\SD2_TP1\CMSIS" -I"D:\Documentos\Digitales 2\TP1\SD2_TP1\utilities" -I"D:\Documentos\Digitales 2\TP1\SD2_TP1\startup" -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="$(<D)/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -52,7 +58,7 @@ source/%.o: ../source/%.c source/subdir.mk
 clean: clean-source
 
 clean-source:
-	-$(RM) ./source/MEF_acumulado.d ./source/MEF_acumulado.o ./source/MEF_habitual.d ./source/MEF_habitual.o ./source/MEF_peatones.d ./source/MEF_peatones.o ./source/MEF_semaforos.d ./source/MEF_semaforos.o ./source/SD2_board.d ./source/SD2_board.o ./source/cars.d ./source/cars.o ./source/key.d ./source/key.o ./source/main.d ./source/main.o ./source/mtb.d ./source/mtb.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o
+	-$(RM) ./source/ADC.d ./source/ADC.o ./source/MEF_Luminaria.d ./source/MEF_Luminaria.o ./source/MEF_acumulado.d ./source/MEF_acumulado.o ./source/MEF_habitual.d ./source/MEF_habitual.o ./source/MEF_peatones.d ./source/MEF_peatones.o ./source/MEF_semaforos.d ./source/MEF_semaforos.o ./source/SD2_board.d ./source/SD2_board.o ./source/cars.d ./source/cars.o ./source/key.d ./source/key.o ./source/main.d ./source/main.o ./source/mtb.d ./source/mtb.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o
 
 .PHONY: clean-source
 

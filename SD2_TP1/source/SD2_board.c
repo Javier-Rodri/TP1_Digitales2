@@ -15,6 +15,7 @@ static const board_gpioInfo_type board_gpioLeds[] =
     {PORTD, GPIOD, 5},      /* LED VERDE RUTA */
 	{PORTE, GPIOE, 17},     /* LED ROJO SEC   */
 	{PORTE, GPIOE, 19},     /* LED VERDE SEC  */
+	{PORTE, GPIOE, 18},     /* LED LUMINARIA  */
 };
 
 static const board_gpioInfo_type board_gpioSw[] =

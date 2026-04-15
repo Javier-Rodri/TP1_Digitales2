@@ -1,0 +1,5 @@
+../source/MEF_Luminaria.c:42:6:MEF_Luminaria_init	8	static
+../source/MEF_Luminaria.c:48:7:obtener_luz_porcentaje	16	static
+../source/MEF_Luminaria.c:55:14:actualizar_promedio_luz	16	static
+../source/MEF_Luminaria.c:79:13:MEF_Luminaria	8	static
+../source/MEF_Luminaria.c:124:13:MEF_Luminaria_task1ms	8	static

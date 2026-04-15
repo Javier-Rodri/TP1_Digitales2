@@ -1,0 +1,3 @@
+D:\Documentos\Digitales 2\TP1\SD2_TP1\drivers/fsl_adc16.h:504:24:ADC16_GetChannelConversionValue	16	static
+../source/ADC.c:4:6:ADC_Init	24	static
+../source/ADC.c:19:10:ADC_Leer_Luz	16	static

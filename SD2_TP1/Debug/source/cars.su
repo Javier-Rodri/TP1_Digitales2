@@ -1,4 +1,4 @@
-../source/cars.c:11:13:count_of_cars_increase	8	static
-../source/cars.c:15:13:count_of_cars_decrease	8	static
-../source/cars.c:19:13:count_of_cars_reset	8	static
-../source/cars.c:23:12:count_of_cars_get	8	static
+../source/cars.c:7:13:count_of_cars_increase	8	static
+../source/cars.c:11:13:count_of_cars_decrease	8	static
+../source/cars.c:15:13:count_of_cars_reset	8	static
+../source/cars.c:19:12:count_of_cars_get	8	static

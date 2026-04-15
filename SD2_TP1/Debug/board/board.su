@@ -1,2 +1,2 @@
-C:\nxp\default_workspace\SD2_TP1_v2.0\drivers/fsl_clock.h:643:20:CLOCK_SetLpsci0Clock	16	static
+D:\Documentos\Digitales 2\TP1\SD2_TP1\drivers/fsl_clock.h:643:20:CLOCK_SetLpsci0Clock	16	static
 ../board/board.c:51:6:BOARD_InitDebugConsole	16	static

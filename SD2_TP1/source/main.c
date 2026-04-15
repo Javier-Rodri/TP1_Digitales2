@@ -4,6 +4,7 @@
 #include "SD2_board.h"
 #include "board.h"
 #include "MEF_semaforos.h"
+#include "MEF_Luminaria.h"
 #include "key.h"
 #include "cars.h"
 
@@ -12,7 +13,7 @@ int main(void) {
     /* Init board hardware */
 	board_init();
 	key_init();
-
+	ADC_Init();
 	/* Reset count of cars */
 	count_of_cars_reset();
 
@@ -24,10 +25,12 @@ int main(void) {
 
     /* Init MEF */
     MEF_semaforos_init();
+    MEF_Luminaria_init();
 
     /* Enter an infinite loop */
     while(1) {
     	MEF_semaforos();
+    	MEF_Luminaria();
     }
 
     return 0 ;
@@ -39,4 +42,7 @@ void SysTick_Handler(void) {
 
 	/* Se descuentan los contadores correspondientes */
 	MEF_semaforos_task1ms();
+
+	/* Se descuenta el contador de verificacion de falsas mediciones */
+	MEF_Luminaria();
 }
